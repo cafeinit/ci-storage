@@ -1,0 +1,23 @@
+{
+  "name": "ci-storage",
+  "version": "1.0.0",
+  "description": "simple storage for browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafeinit/ci-storage.git"
+  },
+  "keywords": [
+    "storage",
+    "cafeinit"
+  ],
+  "author": "burning",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cafeinit/ci-storage/issues"
+  },
+  "homepage": "https://github.com/cafeinit/ci-storage#readme"
+}
