@@ -33,6 +33,10 @@ class CIStorage {
 
   setItem(name, value) {
     // console.log('CIStorage.setItem', name, value)
+    if (!this._data) {
+      this.setData({})
+    }
+
     this._data[name] = value
     this._storage.setItem(this._name, JSON.stringify(this._data))
   }
