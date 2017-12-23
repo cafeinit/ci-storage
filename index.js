@@ -28,7 +28,12 @@ class CIStorage {
 
   getItem(name) {
     // console.log('CIStorage.getItem', name)
-    return this._data[name]
+    if (this._data) {
+      return this._data[name]
+    }
+    else {
+      return null
+    }
   }
 
   setItem(name, value) {
