@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ci-storage</title>
+  </head>
+  <body>
+    <h1>CIStorage</h1>
+    <script src="../dist/ci-storage.js"></script>
+    <script>
+      console.log('CIStorage', CIStorage)
+      var myStorage = new CIStorage('test')
+      myStorage.setItem('name', 'burning')
+      console.log('name', myStorage.getItem('name'))
+    </script>
+  </body>
+</html>

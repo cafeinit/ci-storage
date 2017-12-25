@@ -17,8 +17,8 @@ module.exports = {
     filename: '[name].js',
     library: 'CIStorage',
     // libraryTarget: 'var'  // Export by setting a variable: var Library = xxx (default)
-    libraryTarget: 'amd'  // Export to AMD (optionally named - set the name via the library option)
-    // libraryTarget: 'umd'  // Export to AMD, CommonJS2 or as property in root
+    // libraryTarget: 'amd'  // Export to AMD (optionally named - set the name via the library option)
+    libraryTarget: 'umd'  // Export to AMD, CommonJS2 or as property in root
   },
 
   module: {

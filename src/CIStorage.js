@@ -47,4 +47,7 @@ class CIStorage {
   }
 }
 
-export default CIStorage
+module.exports = CIStorage
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = CIStorage
