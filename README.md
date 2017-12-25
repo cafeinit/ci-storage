@@ -38,7 +38,7 @@ console.log(book.getDate())
 ```
 
 ```javascript
-const book = new CIStorage('book')
+var book = new CIStorage('book')
 
 book.setData({
   title: 'Book Titile',
