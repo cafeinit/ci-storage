@@ -29,3 +29,25 @@ book.setItem('title', 'This is My First JavaScript Book')
 console.log(book.getItem('title'))
 console.log(book.getDate())
 ```
+
+
+## Borswer
+
+```html
+<script src="ci-storage.js"></script>
+```
+
+```javascript
+const book = new CIStorage('book')
+
+book.setData({
+  title: 'Book Titile',
+  author: 'burning',
+  price: '19.00'
+})
+
+console.log(book.getItem('title'))
+book.setItem('title', 'This is My First JavaScript Book')
+console.log(book.getItem('title'))
+console.log(book.getDate())
+```
