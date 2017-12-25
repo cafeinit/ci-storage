@@ -1,9 +1,10 @@
 {
   "name": "ci-storage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple storage for browser",
-  "main": "index.js",
+  "main": "./dist/ci-storage.js",
   "scripts": {
+    "build": "webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/cafeinit/ci-storage/issues"
   },
-  "homepage": "https://github.com/cafeinit/ci-storage#readme"
+  "homepage": "https://github.com/cafeinit/ci-storage#readme",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.0.0",
+    "webpack": "^2.6.0"
+  }
 }

@@ -1,6 +1,6 @@
 /**
  * @fileoverview CIStorage
- * @author burning
+ * @author burning <www.cafeinit.com>
  * @version 2017.12.21
  */
 
