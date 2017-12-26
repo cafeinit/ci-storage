@@ -1,6 +1,6 @@
 {
   "name": "ci-storage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "simple storage for browser",
   "main": "./dist/ci-storage.js",
   "scripts": {
