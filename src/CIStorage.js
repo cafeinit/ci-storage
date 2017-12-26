@@ -10,7 +10,7 @@ let _data = null
 
 class CIStorage {
   constructor(name, storage) {
-    this.version = '1.0.4'
+    this.version = '1.0.5'
     _name = name
     _storage = storage || window.sessionStorage
     this.getData()
@@ -31,6 +31,10 @@ class CIStorage {
     _storage.setItem(_name, JSON.stringify(data))
   }
 
+  removeData() {
+    _storage.removeItem(_name)
+  }
+
   getItem(name) {
     // console.log('CIStorage.getItem', name)
     if (_data) {
@@ -48,6 +52,14 @@ class CIStorage {
     }
 
     _data[name] = value
+    _storage.setItem(_name, JSON.stringify(_data))
+  }
+
+  removeItem(name) {
+    let data = this.getData()
+    delete data[name]
+
+    _data = data
     _storage.setItem(_name, JSON.stringify(_data))
   }
 }

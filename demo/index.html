@@ -10,10 +10,17 @@
     <script>
       console.log('CIStorage', CIStorage)
       var myStorage = new CIStorage('test')
+      console.log('myStorage', myStorage, myStorage.getData())
 
-      console.log('myStorage', myStorage)
       myStorage.setItem('name', 'burning')
       console.log('name', myStorage.getItem('name'))
+      console.log('myStorage', myStorage.getData())
+
+      myStorage.removeItem('name')
+      console.log('name', myStorage.getItem('name'))
+
+      myStorage.removeData()
+      console.log('myStorage', myStorage.getData())
     </script>
   </body>
 </html>
